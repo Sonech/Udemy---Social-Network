@@ -22,7 +22,7 @@ body {
 	margin: 0 0 10px 0;
 	display: inline-flex;
 	position: fixed;
-	/* Order of elements - z-index: 10; */ 
+	z-index: 10; */ 
 }
 
 .logo a{
@@ -73,6 +73,7 @@ nav a:hover {
 	padding: 0 40px;
 	width: 75%;
 	min-width: 950px;
+
 }
 
 
@@ -170,3 +171,9 @@ textarea:focus {
 .post_profile_pic img {
 	border-radius: : 5px;
 }
+
+#loading {
+	width: 75px;
+    height: auto;
+}
+

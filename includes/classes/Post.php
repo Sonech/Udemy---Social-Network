@@ -56,7 +56,8 @@ class Post {
 		
 
 		$str = "";
-		$data =mysqli_query($this->con, "SELECT * FROM posts WHERE deleted='no' ORDER BY id DESC");
+		$data_query = mysqli_query($this->con, "SELECT * FROM posts WHERE deleted='no' ORDER BY id DESC");
+
 
 		if(mysqli_num_rows($data_query) > 0) {
 			$num_iterations = 0; //Number of results checked (not necessarily posted)
