@@ -3,30 +3,30 @@ include("includes/header.php");
 include("includes/classes/User.php");
 include("includes/classes/Post.php");
 
-if(isset($_POST['post'])) {
-	$post = new Post($con, $userLoggedIn);
-	$post->submitPost($_POST['post_text'], 'none');
-}
+	if(isset($_POST['post'])) {
+		$post = new Post($con, $userLoggedIn);
+		$post->submitPost($_POST['post_text'], 'none');
+	}
 
  ?>
- 		<!-- Add column for profile picture -->
- 		<div class="user_details column">
- 			<a href="<?php echo $userLoggedIn; ?>"> <img src="<?php echo $user['profile_pic'];	?>"> </a>
+		<!-- Add column for profile picture -->
+		<div class="user_details column">
+			<a href="<?php echo $userLoggedIn; ?>"> <img src="<?php echo $user['profile_pic'];	?>"> </a>
 
- 			<div class="user_details_left_right">
+			<div class="user_details_left_right">
 
-	 			<a href="<?php echo $userLoggedIn; ?>">
-		 			<?php
-		 				echo $user['first_name'] . " " . $user['last_name'];
-		 			?>
-	 			</a><br>
+ 			<a href="<?php echo $userLoggedIn; ?>">
+	 			<?php
+	 				echo $user['first_name'] . " " . $user['last_name'];
+	 			?>
+ 			</a><br>
 
-		 		<?php 
+	 		<?php 
 		 		echo "Posts: " . $user['num_posts'] . "<br>";
 		 		echo "Likes: " . $user['num_likes'];
-		 		?>
- 			</div>
- 		</div>
+	 		?>
+			</div>
+		</div>
 
  		<!-- Adds the main column for newsfeed -->
  		<div class="main_column column">
@@ -68,7 +68,7 @@ if(isset($_POST['post'])) {
            if (isElementInView(bottomElement[0]) && noMorePosts == 'false') {
                loadPosts();
            }
-       });
+    	});
  
        function loadPosts() {
            if(inProgress) { //If it is already in the process of loading some posts, just return
