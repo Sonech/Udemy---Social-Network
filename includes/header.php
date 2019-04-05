@@ -1,5 +1,7 @@
  <?php 
 require 'config/config.php';
+include("includes/classes/User.php");
+include("includes/classes/Post.php");
 
 
 if(isset($_SESSION['username'])) {
@@ -18,10 +20,13 @@ else {
 <html>
 	<head>
 		<title>Akut Vagt</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
 		<!-- Javascript -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/bootbox.min.js"></script>
+		<script src="assets/js/akv.js"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -47,7 +52,7 @@ else {
 					<a href="#">
 						<i class="fas fa-igloo fa-lg"></i>
 					</a>
-					<a href="#"><i class="fas fa-users fa-lg"></i>
+					<a href="requests.php"><i class="fas fa-users fa-lg"></i>
 					</a>
 					<a href="#"><i class="fas fa-cogs fa-lg"></i>
 					</a>
