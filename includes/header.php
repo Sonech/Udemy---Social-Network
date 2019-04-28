@@ -27,12 +27,15 @@ else {
 		<script src="assets/js/bootstrap.js"></script>
 		<script src="assets/js/bootbox.min.js"></script>
 		<script src="assets/js/akv.js"></script>
+		<script src="assets/js/jquery.jcrop.js"></script>
+		<script src="assets/js/jcrop_bits.js"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+		<link rel="stylesheet" href="assets/css/jquery.jcrop.css" type="text/css" />
+	
 	</head>
 		<body>
 

@@ -356,14 +356,14 @@ textarea:focus {
 
 
  .profile_main_column {
- 	background-color: #fff;
-	float: right;
-	width: 55%;
-	z-index: -1;
-	min-height: 160px;
-	min-width: 500px;
- 	
+ 	min-width: 675px;
+ 	float: left;
+ 	width: 70%;
+ 	z-index: -1;
+ }
 
+ .profile_info_bottom {
+ 	margin: 10px 0 0 7px;
  }
 
  
