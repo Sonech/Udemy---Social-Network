@@ -351,7 +351,7 @@ textarea:focus {
  	border-radius: 4px;
  	right: -15px;
  	position: relative;
- 	z-index: 10;
+ 	z-index: 9;
  }
 
 
@@ -476,4 +476,31 @@ textarea:focus {
 
 .tab-content {
 	margin-top: 25px;
+}
+
+.dropdown_data_window {
+	background-color: #fff;
+	border-radius: 0 0 8px 8px;
+	border-top: none;
+	width: 300px;
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	overflow: scroll;
+}
+
+.notification_badge {
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #F00;
+	border-radius: 10px;
+	position: absolute;
+	left: 7px;
+	top: -5px;
 }
